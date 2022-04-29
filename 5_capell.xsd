@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Definició de l'esquema -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- Definició de l'element arrel -->
     <xs:element name="capell">
+        <!-- Es defineix com a tipus complex ja que ha de contenir altres elements -->
         <xs:complexType>
+            <!-- sequence ens serveix per definir els elements que hi ha d'haver i en quin ordre si no indicam el contrari -->
             <xs:sequence>
                 <xs:element name="color" type="xs:string"/>
                 <xs:element name="model" type="xs:string"/>

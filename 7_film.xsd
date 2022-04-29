@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Definició de l'esquema -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!-- Definició de l'element arrel película -->
     <xs:element name="pelicula">
         <xs:complexType>
             <xs:sequence>
@@ -12,6 +14,7 @@
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
+            <!-- Definició dels atributs per a l'element película -->
             <xs:attribute name="titol" type="xs:string" />
             <xs:attribute name="minuts" type="xs:integer" />
         </xs:complexType>

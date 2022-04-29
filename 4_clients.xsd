@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Definició de l'esquema -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!-- Definició dels diferents elements començant per l'element arrel -->
 <xs:element name="clients">
     <xs:complexType>
         <xs:sequence>
+            <!-- L'element client pot no aparèixer o aparèixer un nombre indefinit de vegades -->
             <xs:element name="client" minOccurs="0" maxOccurs="unbounded">
                 <xs:complexType>
                     <xs:sequence>
                         <xs:element name="llinatge" type="xs:string"/>
                         <xs:element name="edat" type="xs:integer"/>
                         <xs:element name="data_naixement">
+                            <!-- Definició de l'atribut població a l'element data de naixement -->
                             <xs:complexType>
                                 <xs:simpleContent>
                                     <xs:extension base="xs:string">
@@ -17,9 +21,11 @@
                                 </xs:simpleContent>
                             </xs:complexType>
                         </xs:element>
+                        <!-- Com que els següents elements són opcionals definim el mínim a 0 -->
                         <xs:element name="email" type="xs:string" minOccurs="0"/>
                         <xs:element name="telefon" type="xs:string" minOccurs="0"/>
                     </xs:sequence>
+                    <!-- Definició de l'atribut codi per a l'element client -->
                     <xs:attribute name="codi" type="xs:integer"/>
                 </xs:complexType>
             </xs:element>
