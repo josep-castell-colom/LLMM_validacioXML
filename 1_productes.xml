@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE productes [
+    <!ELEMENT productes (producte*)>
+    <!ELEMENT producte (ratoli|teclat|monitor)>
+    <!ELEMENT ratoli (#PCDATA)>
+    <!ELEMENT teclat (#PCDATA)>
+    <!ELEMENT monitor (#PCDATA)>
+    <!ATTLIST ratoli codi ID #REQUIRED>
+    <!ATTLIST teclat codi ID #REQUIRED>
+    <!ATTLIST monitor codi ID #REQUIRED>
+]>
+
+
+<productes>
+    <producte>
+        <ratoli codi="r01"> sense fil space </ratoli>
+    </producte>
+    <producte>
+        <teclat codi= "t03">Teclat de colors </teclat>
+    </producte>
+    <producte>
+        <teclat codi= "t04">Teclat de colors </teclat>
+    </producte>
+    <producte>
+        <monitor codi="m100">Tàctil</monitor>
+    </producte>
+ </productes>

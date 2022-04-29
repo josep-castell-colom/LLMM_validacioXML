@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="vehicle">
+        <xs:choice>
+            <xs:sequence>
+                <xs:element name="cotxe"/>
+                <xs:element name="moto"/>
+                <xs:element name="camió"/>
+            </xs:sequence>
+        </xs:choice>
+    </xs:complexType>
+</xs:schema>
